@@ -1,0 +1,31 @@
+{
+	"id": "appbackbone",
+	"dependencies": [
+		"appbackbone/BackboneStore",
+		"dojo/store/Observable"
+	],
+	"controllers": [
+		"dojox/app/controllers/Load",
+		"dojox/app/controllers/Transition",
+		"dojox/app/controllers/Layout",
+		"dojox/app/controllers/History"
+	],
+	"defaultTransition": "slide",
+	"stores": {
+		"contacts": {
+			"type": "appbackbone/BackboneStore",
+			"observable": true
+		}
+	},
+	"defaultView": "list",
+	"views": {
+		"list": {
+			"dependencies": [
+					"dojox/mobile/EdgeToEdgeStoreList",
+					"dojox/mobile/Button"
+			],
+			"controller": "appbackbone/list",
+			"template": "appbackbone/list.html"
+		}
+	}
+}
