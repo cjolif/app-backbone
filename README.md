@@ -14,11 +14,12 @@ All contributions require a [Dojo Foundation CLA](http://dojofoundation.org/abou
 ## Dependencies
 
 This project requires the following other projects to run:
+
  * dojo
  * dijit
  * dojox
  
-This project also requires MongoDB, Node.JS, Node.JS Express & MongoDB driver packages.
+This project also requires MongoDB, Node.JS (0.10+), Node.JS Express & MongoDB driver packages.
 
 ## Installation
 
