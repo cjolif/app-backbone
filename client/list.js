@@ -6,7 +6,8 @@ define(["backbone"], function(/*Backbone*/){
 			idAttribute: "_id" // for MongoDB
 		}
 	);
-	// create a collection
+
+	// create a collection using the model, connect it to our JSON Rest server
 	var collection = new Backbone.Collection([], {
 		model: Item,
 		url: "http://localhost:3000/items"
@@ -25,7 +26,8 @@ define(["backbone"], function(/*Backbone*/){
 				}
 			};
 			this.add.on("click", function(){
-				collection.create({ firstname: "me", lastname: "you"});
+				// use wait option so that the item ID is known before the model is added to the collection
+				collection.create({ firstname: "me", lastname: "you"}, { wait: true });
 			});
 			this.remove.on("click", function(){
 				collection.get(list.getChildren()[(list.getChildren().length -1)].id).destroy();

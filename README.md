@@ -23,11 +23,16 @@ This project also requires MongoDB, Node.JS, Node.JS Express & MongoDB driver pa
 ## Installation
 
 
-* Manual installation of by dropping app-backbone as a sibling of the top level Dojo modules:
+Manual installation of by dropping app-backbone as a sibling of the top level Dojo modules:
+
  * dojo
  * dijit
  * dojox
  * app-backbone
+ 
+Installation of the required Node.JS packages:
+
+  * npm install
  
 Run the server from the app-backbone directory:
 
