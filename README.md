@@ -30,17 +30,25 @@ Manual installation of by dropping app-backbone as a sibling of the top level Do
  * dojox
  * app-backbone
  
+Installation of MongoDG:
+
+  * http://docs.mongodb.org/manual/installation/
+ 
 Installation of the required Node.JS packages:
 
   * npm install
  
+Run MongoDB:
+  
+  * mongod
+  
 Run the server from the app-backbone directory:
 
-node ./server.js
+  * node ./server.js
 
 Then point your web browser to:
 
-http://localhost:3000/client.html
+  * http://localhost:3000/client.html
 
 
 
